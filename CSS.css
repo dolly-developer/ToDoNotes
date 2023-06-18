@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(228, 191, 228);
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+}
+.container {
+  vertical-align: center;
+  width: 30%;
+  height: 500px;
+  background-color: rgb(240, 208, 250);
+  cursor: pointer;
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  float: right;
+}
+#input_item {
+  border: none;
+  border-radius: 12px;
+  width: 270px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#btn {
+  padding: 18px;
+  width: 100px;
+  border: none;
+  border-radius: 12px;
+  color: rgb(245, 242, 242);
+  background-color: rgb(153, 24, 153);
+  font-size: 12px;
+  font-family: cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#item_list {
+  background-color: rgb(38, 43, 40);
+  height: 100%;
+  width: 100%;
+  list-style: square inside url("image/star.png");
+  position: absolute;
+  border: none;
+  border-radius: 12px;
+  border-color: rgb(97, 39, 97);
+}
+
+#item_list ul li {
+  color: white;
+  font-size: 20px;
+  font-family: cursive, fantasy;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.left-container h1 {
+  font-family: Monospace;
+  color: purple;
+}
+.left-container h3 {
+  font-family: cursive;
+  color: purple;
+}
+.left-container p,
+li {
+  font-family: cursive;
+  color: rgb(9, 121, 121);
+}
+
+@counter-style repeating-emoji {
+  system: cyclic;
+  symbols: "\1F4A1""\1F4A1""\1F4A1"; // unicode code point
+  suffix: " ";
+}
+
+.left-container ul {
+  list-style-type: repeating-emoji;
+}
